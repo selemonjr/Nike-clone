@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#header {
+    background: black;
+    width: 100%;
+    height: 100vh;
+}
+#header {
+    background: black;
+    width: 100%;
+    height: 100vh;
+}
+
+
+nav {
+    padding: 1% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+.div-center {
+    display: flex;
+    justify-content: center;
+}
+
+.navlinks ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navlinks li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 2px;
+    font-size: 1.2rem;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 10px white;
+    animation: glower 1s ease-out infinite alternate;
+}
+
+@keyframes glower {
+    from {
+        box-shadow: 0 0 10px white;
+    }
+    to {
+        box-shadow: 0 0 15px purple;
+    }
+}
+
+.navlinks li a::after {
+    content: "";
+    background: white;
+    height: 2px;
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.navlinks li a:hover::after {
+    width: 100%;
+}
+
+.submenu {
+    display: none;
+}
+.navlinks ul li:hover .submenu {
+    display: block;
+    background: black;
+    margin-top: 5px;
+    margin-left: -10px;
+    position: absolute;
+}
+
+.submenu ul li {
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    width: 90px;
+    text-align: center;
+}
+/*-----------------------container---------------------------------*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.item-1 {
+    width: 210px;
+    height: 330px;
+    margin: 5%;
+    text-align: center;
+    color: white;
+}
+.item-2 {
+    background: white;
+    width: 300px;
+    height: 300px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 10%;
+    animation: fly 1s ease-out infinite alternate;
+}
+
+@keyframes fly {
+    from {
+        width: 300px;
+        height: 300px;
+    }
+    to {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+.background {
+    width: 300px;
+    height: 300px;
+}
+
+.text {
+    font-size: 80px;
+}
+
+.btn-hero {
+    padding: 6% 40%;
+    border-radius: 10px;
+    background: black;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    animation: glow 1s ease-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px white;
+    }
+    to {
+        box-shadow: 0 0 15px white
+    }
+}
+
+.btn-hero a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/*-------------------------products------------------------*/
+#products {
+    background: black;
+    padding-top: 3%;
+    height: 100vh;
+    width: 100%;
+}
+.shoes {
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.shoes a {
+    text-decoration: none;
+    color: white;
+}
+
+.shoes a::after {
+    content: "";
+    background: white;
+    height: 2px;
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.shoes a:hover::after {
+    width: 100%;
+}
+
+.container-1,.container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    background: black;
+    padding-bottom: 5%;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px rgb(209, 207, 207);
+    text-align: center;
+    padding-top: 2%;
+    animation: glowing 1s ease-out infinite alternate;
+    transition: 0.5s;
+
+}
+
+.box:hover {
+    transform: translateY(-5%);
+}
+
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 10px rgb(117, 115, 115);
+    }
+    to {
+        box-shadow: 0 0 20px rgb(212, 211, 211);
+    }
+}
+.box-3 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px rgb(245, 58, 58);
+    text-align: center;
+    padding-top: 2%;
+    animation: low 1s ease-out infinite alternate;
+    transition: 0.5s;
+}
+
+.box-3:hover {
+    transform: translateY(-5%);
+}
+
+@keyframes low {
+    from {
+        box-shadow: 0 0 10px rgb(109, 221, 236);
+    }
+    to {
+        box-shadow: 0 0 20px rgb(0, 162, 255);
+    }
+}
+
+
+.box img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.box-3 img {
+    width: 150px;
+    height: 150px;
+}
+.box-1{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px turquoise;
+    text-align: center;
+    padding-top: 2%;
+    animation: shine 1s ease-out infinite alternate;
+    transition: 0.5s;
+}
+
+@keyframes shine {
+    from {
+        box-shadow: 0 0 10px rgb(177, 223, 218);
+    }
+    to {
+        box-shadow: 0 0 20px rgb(14, 247, 223);
+    }
+}
+.box-1:hover {
+    transform: translateY(-5%);
+}
+.box-4  {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px rgb(207, 106, 174);
+    text-align: center;
+    padding-top: 2%;
+    animation: pink 1s ease-out infinite alternate;
+    transition: 0.5s;
+}
+.box-4:hover {
+    transform: translateY(-5%);
+}
+
+@keyframes pink {
+    from {
+        box-shadow: 0 0 10px rgb(243, 78, 174);
+    }
+    to {
+        box-shadow: 0 0 20px rgb(255, 2, 179);
+    }
+}
+.box-1 img {
+    width: 150px;
+    height: 150px;
+}
+
+.box-4 img {
+    width: 150px;
+    height: 150px;
+}
+.box-2 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px rgb(49, 223, 14);
+    text-align: center;
+    padding-top: 2%;
+    animation: nature 1s ease-out infinite alternate;
+    transition: 0.5s;
+}
+.box-2:hover {
+    transform: translateY(-5%);
+}
+@keyframes nature {
+    from {
+        box-shadow: 0 0 10px rgb(143, 238, 130);
+    }
+    to {
+        box-shadow: 0 0 20px rgb(21, 255, 0);
+    }
+}
+
+
+.box-5 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px blue;
+    text-align: center;
+    padding-top: 2%;
+    animation: light 1s ease-out infinite alternate;
+    transition: 0.5s;
+}
+.box-5:hover {
+    transform: translateY(-5%);
+}
+
+@keyframes light {
+    from {
+        box-shadow: 0 0 10px rgb(78, 78, 243);
+    }
+    to {
+        box-shadow: 0 0 20px rgb(0, 0, 255);
+    }
+}
+
+.box-5 img {
+    width: 150px;
+    height: 150px;
+}
+
+.box-2 img {
+    width: 150px;
+    height: 150px;
+}
+
+
+.textbox {
+    text-align: center;
+}
+.textbox h3{
+    margin-top: 4%;
+    margin-bottom: 2%;
+    padding: 2%;
+    color: white;
+}
+.textbox h4 {
+    padding: 2%;
+    color: white;
+}
+
+.textbox p {
+    padding-top: 3%;
+    padding-left: 2%;
+    color: white;
+}
+
+/*-------------------------------------hoodies----------------------*/
+
